@@ -6,11 +6,4 @@ It may take time depending on the number of answers and at the end produces a in
 My Infograph.
 
 
-
-
-
-
-
-
-
 ![alt tag](krishnan.JPG)
