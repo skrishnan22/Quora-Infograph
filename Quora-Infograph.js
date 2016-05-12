@@ -1,4 +1,4 @@
-ans_cnt=parseInt(document.getElementsByClassName("list_count")[0].innerHTML);
+ans_cnt=parseInt(document.getElementsByClassName("list_count")[0].innerHTML.replace(',',''));
 
 var timer=setInterval(function(){
 	var len=document.body.scrollHeight;
