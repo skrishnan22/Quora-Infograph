@@ -18,7 +18,7 @@ if(ans_cnt==x.length)
     upv_views();
 	topics();
 	new_win();		
-}},3000);
+}},1000);
 function convert(c_count){
 	if(c_count.slice(-1)=='k'){
 		count = parseFloat(c_count.slice(0,-1)*1000);
