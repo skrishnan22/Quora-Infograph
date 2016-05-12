@@ -30,8 +30,7 @@ function convert(c_count){
 		count=parseFloat(c_count);
 return count	
 }	
-function human_format(num)
-{
+function human_format(num){
     magnitude = 0
     while (num >= 1000)
 	{
