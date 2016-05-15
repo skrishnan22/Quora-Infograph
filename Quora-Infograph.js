@@ -83,7 +83,14 @@ function topics(){
 	topic0 = topics[0].getElementsByClassName("TopicName")[0].innerText;
 	topic1=topics[1].getElementsByClassName("TopicName")[0].innerText;
 	topic2=topics[2].getElementsByClassName("TopicName")[0].innerText;
-	}}
+	}
+	else{
+	topic0 = ' ';
+	topic1 = ' ';
+	topic2 = ' ';  
+		
+	}	
+	}
 	catch(err){
 	topic0 = ' ';
 	topic1 = ' ';
