@@ -19,7 +19,7 @@ if(ans_cnt==x.length)
     upv_views();
 	topics();
 	new_win();		
-}},3000);
+}},400);
 function convert(c_count){
 	if(c_count.slice(-1)=='k'){
 		count = parseFloat(c_count.slice(0,-1)*1000);
@@ -77,10 +77,18 @@ ratio=parseInt(total_views/total_upv);
 }	
 
 function topics(){
+	try{
 	topics=document.getElementsByClassName("ProfileExperienceList")[0].getElementsByClassName("topic_info");
+	if(topics.length==3){
 	topic0 = topics[0].getElementsByClassName("TopicName")[0].innerText;
 	topic1=topics[1].getElementsByClassName("TopicName")[0].innerText;
 	topic2=topics[2].getElementsByClassName("TopicName")[0].innerText;
+	}}
+	catch(err){
+	topic0 = ' ';
+	topic1 = ' ';
+	topic2 = ' ';  
+	}
 	img_link = document.getElementsByClassName("profile_wrapper")[0].getElementsByClassName("profile_photo_img")[0].src;
 	user_name = document.getElementsByClassName("profile_wrapper")[0].getElementsByClassName("profile_photo_img")[0].alt;
 	}	
