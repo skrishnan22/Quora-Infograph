@@ -5,4 +5,4 @@ It may take time depending on the number of answers and at the end produces a in
 
 
 #To DO
-1.Changes in Quora website now makes it difficult to fetch answer views. For users with answer views greater than 1k can be obtained but need a work around in the other case.
+1.Changes in Quora website now makes it difficult to fetch answer views. For users with answer views greater than 1k there is a simple alternative but need to find a work around for other users
