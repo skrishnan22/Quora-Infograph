@@ -1,3 +1,4 @@
+var ini = false;
 ans_cnt=parseInt(document.getElementsByClassName("list_count")[0].innerHTML);
 var timer=setInterval(function(){
 	var len=document.body.scrollHeight;
@@ -12,14 +13,30 @@ var timer=setInterval(function(){
 	}
 	}
 	x=document.getElementsByClassName("AnswerListItem PagedListItem");
-if(ans_cnt==x.length)
+	if(ans_cnt==x.length)
 {
     clearInterval(timer);
-    upv_views();
-	topics();
-	new_win();		
+	click();
+		
 }},400);
-
+function click()
+{for(ck=0;ck<x.length;ck++)
+	{     try
+		{
+		x[ck].getElementsByClassName("more_link")[0].click();
+		}
+	      catch(err)
+	      {
+		      continue;
+	      }
+	}
+	if(ck==x.length){
+	upv_views();
+	topics();
+	new_win();
+	}
+		
+}
 function convert(c_count){
 	if(c_count.slice(-1)=='k'){
 		count = parseFloat(c_count.slice(0,-1)*1000);
